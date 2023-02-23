@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg bg-body-white">
+<nav class="navbar navbar-expand-lg bg-body-white fixed-top">
     <div class="container">
         <a class="navbar-brand" href="">
             <img src="{{ asset('/storage/icons/icon.png') }}" width="130" height="65">
@@ -16,12 +16,20 @@
                     <a class="nav-link" href="#">Layanan</a>
                 </li>
                 <li class="nav-item">
-                    <div class="gap-2">
-                        <a class="btn btn-success nav-btn">Masuk</a>
-                        <a class="btn btn-primary nav-btn">Daftar</a>
-                    </div>
+                    <a class="btn btn-success nav-btn">Masuk <i class="bi bi-arrow-right-circle-fill"></i></a>
                 </li>
             </ul>
         </div>
     </div>
 </nav>
+
+<script>
+    window.addEventListener('scroll', function() {
+        const navbar = document.querySelector('.navbar');
+        if (window.scrollY > 0) {
+            navbar.classList.add('shadow');
+        } else {
+            navbar.classList.remove('shadow');
+        }
+    });
+</script>

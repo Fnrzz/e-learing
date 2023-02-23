@@ -1,4 +1,9 @@
-#navbarNav {
+.navbar {
+    box-shadow: none;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.navbar-collapse {
     justify-content: end;
 }
 
@@ -15,10 +20,14 @@
 
 @media screen and (max-width:994px) {
     .nav-btn {
-        font-size: 2vw;
+        font-size: 3vw;
+    }
+
+    .navbar-nav {
+        padding-left: 2rem;
     }
 
     .nav-link {
-        font-size: 2vw;
+        font-size: 3vw;
     }
 }
