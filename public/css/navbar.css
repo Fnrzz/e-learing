@@ -1,0 +1,24 @@
+#navbarNav {
+    justify-content: end;
+}
+
+.nav-link {
+    font-size: 1vw;
+    font-weight: bold;
+}
+
+.nav-btn {
+    font-size: 1vw;
+    font-weight: bold;
+    border-radius: 30px;
+}
+
+@media screen and (max-width:994px) {
+    .nav-btn {
+        font-size: 2vw;
+    }
+
+    .nav-link {
+        font-size: 2vw;
+    }
+}
