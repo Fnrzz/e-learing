@@ -6,3 +6,25 @@
     margin-top: 10px;
     border-radius: 30px;
 }
+
+#about {
+    margin-top: 5vw;
+}
+
+#about .text-about {
+    text-align: justify;
+}
+
+#about .img-about {
+    width: 30vw;
+}
+
+@media screen and (max-width:994px) {
+    #about .text-about {
+        font-size: 3vw;
+    }
+
+    #about .img-about {
+        width: 50vw;
+    }
+}

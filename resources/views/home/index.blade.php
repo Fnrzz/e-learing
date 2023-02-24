@@ -39,4 +39,25 @@
             </div>
         </div>
     </section>
+    <section id="about">
+        <div class="container p-5">
+            <div class="row row-cols-1 row-cols-md-2 align-items-center">
+                <div class="col d-flex justify-content-center">
+                    <img src="{{ asset('/storage/icons/logo.png') }}" class="img-about" data-aos="fade-up"
+                        data-aos-duration="1000">
+                </div>
+                <div class="col">
+                    <p class="text-about fw-bold" data-aos="fade-up" data-aos-duration="1000">
+                        Selamat datang di CodeCampus, sebuah platform e-learning yang menyediakan berbagai kursus coding
+                        berkualitas untuk semua tingkatan. Kami percaya bahwa setiap orang dapat mempelajari coding dan
+                        mengembangkan keterampilan yang diperlukan untuk membangun aplikasi dan website yang inovatif.
+                        Dengan kurikulum yang dirancang oleh para ahli industri dan materi yang diperbarui secara berkala,
+                        kami menawarkan pelatihan coding yang berkualitas untuk Anda yang ingin belajar coding dari awal
+                        atau meningkatkan kemampuan coding Anda. Selain itu, kami juga menawarkan kursus khusus untuk
+                        pengembangan web, aplikasi seluler, dan banyak lagi.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 @endsection
