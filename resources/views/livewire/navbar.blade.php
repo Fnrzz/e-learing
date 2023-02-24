@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg bg-body-white fixed-top">
+<nav class="navbar navbar-expand-lg bg-white sticky-top">
     <div class="container">
         <a class="navbar-brand" href="">
             <img src="{{ asset('/storage/icons/icon.png') }}" width="130" height="65">
@@ -10,7 +10,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Beranda</a>
+                    <a class="nav-link" href="/">Beranda</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Layanan</a>
@@ -22,14 +22,3 @@
         </div>
     </div>
 </nav>
-
-<script>
-    window.addEventListener('scroll', function() {
-        const navbar = document.querySelector('.navbar');
-        if (window.scrollY > 0) {
-            navbar.classList.add('shadow');
-        } else {
-            navbar.classList.remove('shadow');
-        }
-    });
-</script>
