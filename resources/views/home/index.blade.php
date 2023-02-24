@@ -4,7 +4,7 @@
     <section id="jumbotron">
         <div class="container">
             <div class="row row-cols-2 align-items-center g-3">
-                <div class="col">
+                <div class="col" data-aos="fade" data-aos-duration="1000">
                     <div class="row">
                         <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-inner">
@@ -28,12 +28,13 @@
                     </div>
                     <div class="row ">
                         <div class="col text-center">
-                            <a href="" class="btn btn-success btn-join fw-bold">Join Now</a>
+                            <a href="{{ route('login') }}" class="btn btn-success btn-join fw-bold">Join Now</a>
                         </div>
                     </div>
                 </div>
                 <div class="col d-flex justify-content-end">
-                    <img src="{{ asset('/storage/icons/rocket.png') }}" class="img-fluid">
+                    <img src="{{ asset('/storage/icons/rocket.png') }}" data-aos="fade-left" data-aos-duration="1000"
+                        class="img-fluid">
                 </div>
             </div>
         </div>
