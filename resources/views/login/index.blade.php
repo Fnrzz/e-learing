@@ -8,17 +8,18 @@
                     <div class="title-card mb-3">
                         <h5 class="fw-bold">Login</h5>
                     </div>
-                    <form action="">
+                    <form action="{{ route('login') }}" method="POST">
+                        @csrf
                         <div class="mb-3">
                             <label for="email" class="form-label fw-bold">Email</label>
-                            <input type="email" class="form-control" id="email">
+                            <input type="email" class="form-control" name="email" id="email">
                         </div>
                         <div class="mb-3">
                             <label for="password" class="form-label fw-bold">Password</label>
-                            <input type="password" class="form-control" id="password">
+                            <input type="password" class="form-control" name="password" id="password">
                         </div>
                         <div class="d-grid mb-3">
-                            <button class="btn btn-success">Login</button>
+                            <button class="btn btn-success" type="submit">Login</button>
                         </div>
                     </form>
                     <div class="mb-3 d-flex justify-content-center">
