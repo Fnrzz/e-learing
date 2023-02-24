@@ -8,17 +8,19 @@
                     <div class="title-card mb-3">
                         <h5 class="fw-bold">Login</h5>
                     </div>
-                    <div class="mb-3">
-                        <label for="email" class="form-label fw-bold">Email</label>
-                        <input type="email" class="form-control" id="email">
-                    </div>
-                    <div class="mb-3">
-                        <label for="password" class="form-label fw-bold">Password</label>
-                        <input type="password" class="form-control" id="password">
-                    </div>
-                    <div class="d-grid mb-3">
-                        <button class="btn btn-success">Login</button>
-                    </div>
+                    <form action="">
+                        <div class="mb-3">
+                            <label for="email" class="form-label fw-bold">Email</label>
+                            <input type="email" class="form-control" id="email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label fw-bold">Password</label>
+                            <input type="password" class="form-control" id="password">
+                        </div>
+                        <div class="d-grid mb-3">
+                            <button class="btn btn-success">Login</button>
+                        </div>
+                    </form>
                     <div class="mb-3 d-flex justify-content-center">
                         <img src="{{ asset('/storage/icons/icon.png') }}">
                     </div>
