@@ -60,4 +60,52 @@
             </div>
         </div>
     </section>
+    <section id="feature">
+        <div class="container p-5">
+            <div class="row row-cols-1 row-cols-md-3 g-5">
+                <div class="col">
+                    <div class="card shadow" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="card-body">
+                            <div class="row justify-content-center">
+                                <img src="{{ asset('/storage/icons/1.png') }}" class="img-feature rounded-circle">
+                                <p class="text-secondary">
+                                    Kami menawarkan kursus pemrograman web untuk pengguna yang ingin mempelajari bahasa
+                                    pemrograman web seperti HTML, CSS, dan JavaScript. Kursus ini dapat disesuaikan
+                                    dengan
+                                    level pengguna, dari pemula hingga tingkat lanjutan.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="card-body">
+                            <div class="row justify-content-center">
+                                <img src="{{ asset('/storage/icons/2.png') }}" class="img-feature rounded-circle">
+                                <p class="text-secondary">
+                                    Kami menawarkan proyek dan challenge untuk menguji kemampuan pengguna dalam
+                                    membuat aplikasi web dari awal. Proyek dan challenge ini dapat berupa membuat website,
+                                    membuat aplikasi web sederhana, atau mengoptimalkan performa aplikasi web.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="card-body">
+                            <div class="row justify-content-center">
+                                <img src="{{ asset('/storage/icons/3.png') }}" class="img-feature rounded-circle">
+                                <p class="text-secondary">
+                                    Forum diskusi dan komunitas untuk membantu pengguna dalam memecahkan masalah dan
+                                    bertukar informasi tentang web developing.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 @endsection

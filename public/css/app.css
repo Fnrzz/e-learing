@@ -1,5 +1,5 @@
 #App {
-    height: 200vh;
+    height: 500vh;
 }
 
 #jumbotron .btn-join {
@@ -19,12 +19,56 @@
     width: 30vw;
 }
 
-@media screen and (max-width:994px) {
+#feature .card {
+    border-radius: 15px;
+    height: 20vw;
+}
+
+#feature .img-feature {
+    margin-top: -8vw;
+    width: 13vw;
+}
+
+/* Tablet */
+@media screen and (max-width:992px) {
+    #about .text-about {
+        font-size: 1.3vw;
+    }
+
+    #about .img-about {
+        width: 30vw;
+    }
+
+    #feature .card {
+        height: 30vw;
+    }
+
+    #feature p {
+        font-size: 1.3vw;
+    }
+}
+
+/* HP */
+@media screen and (max-width:767px) {
     #about .text-about {
         font-size: 3vw;
     }
 
     #about .img-about {
-        width: 50vw;
+        width: 30vw;
+    }
+
+    #feature .card {
+        margin-top: 5vw;
+        height: 50vw;
+    }
+
+    #feature p {
+        font-size: 3vw;
+    }
+
+    #feature .img-feature {
+        margin-top: -20vw;
+        width: 30vw;
     }
 }
