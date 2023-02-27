@@ -25,6 +25,11 @@
                     <div class="mb-3 d-flex justify-content-center">
                         <img src="{{ asset('/storage/icons/icon.png') }}">
                     </div>
+                    <div class="mb-3 d-flex justify-content-center">
+                        <a href="{{ route('register') }}" class="text-center text-decoration-none">
+                            <small>Register ?</small>
+                        </a>
+                    </div>
                     <div class="mb-3">
                         <a href="{{ route('home') }}" class="text-decoration-none">
                             <small><i class="bi bi-arrow-left-circle-fill"></i> Back</small>

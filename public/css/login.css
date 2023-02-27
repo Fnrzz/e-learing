@@ -30,6 +30,17 @@ body {
     font-weight: bold;
 }
 
+#register .title-card {
+    height: 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#register label {
+    font-size: 1vw;
+}
+
 @media screen and (max-width:994px) {
     .card {
         width: 80vw;
@@ -41,5 +52,9 @@ body {
 
     .card-body img {
         width: 20vw;
+    }
+
+    #register label {
+        font-size: 3vw;
     }
 }
