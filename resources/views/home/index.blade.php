@@ -37,6 +37,22 @@
                         class="img-fluid">
                 </div>
             </div>
+            @if (session()->has('success'))
+                <div class="toast-container position-fixed bottom-0 end-0 p-5">
+                    <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
+                        <div class="toast-header">
+                            <strong class="me-auto">CodeCampus</strong>
+                            <small>Now</small>
+                            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                        </div>
+                        <div class="toast-body">
+                            <b>
+                                {{ session('success') }}
+                            </b>
+                        </div>
+                    </div>
+                </div>
+            @endif
         </div>
     </section>
     <section id="about">

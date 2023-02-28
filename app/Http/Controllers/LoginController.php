@@ -23,8 +23,8 @@ class LoginController extends Controller
     {
         $rules = $request->validate([
             'name' => 'required',
-            'email' => ['required', 'email'],
-            'username' => ['required', 'unique:users'],
+            'email' => 'required|email',
+            'username' => 'required|unique:users',
             'password' => 'required'
         ]);
 
@@ -40,18 +40,16 @@ class LoginController extends Controller
     {
 
         $credentials = $request->validate([
-            'email' => ['required', 'email'],
-            'password' => ['required'],
+            'email' => 'required|email',
+            'password' => 'required',
         ]);
 
         if (Auth::attempt($credentials)) {
             $request->session()->regenerate();
-            return redirect()->intended('/');
+            return redirect('/')->with('success', 'Login Berhasil');
         }
 
-        return back()->withErrors([
-            'email' => 'The provided credentials do not match our records.',
-        ])->onlyInput('email');
+        return back()->with('error', 'Login Gagal');
     }
 
     public function logout(Request $request): RedirectResponse

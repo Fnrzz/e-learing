@@ -1,7 +1,7 @@
 @extends('login.layouts.layout')
 
 @section('content')
-    <div class="container">
+    <div class="container" id="login">
         <div class="row justify-content-center align-items-center">
             <div class="card shadow" data-aos="fade-down" data-aos-duration="1000">
                 <div class="card-body">
@@ -11,12 +11,12 @@
                     <form action="{{ route('login') }}" method="POST">
                         @csrf
                         <div class="mb-3">
-                            <label for="email" class="form-label fw-bold">Email</label>
-                            <input type="email" class="form-control" name="email" id="email">
+                            <label class="form-label fw-bold">Email</label>
+                            <input type="email" class="form-control" name="email" required>
                         </div>
                         <div class="mb-3">
                             <label for="password" class="form-label fw-bold">Password</label>
-                            <input type="password" class="form-control" name="password" id="password">
+                            <input type="password" class="form-control" required name="password" id="password">
                         </div>
                         <div class="d-grid mb-3">
                             <button class="btn btn-success" type="submit">Login</button>
@@ -39,4 +39,20 @@
             </div>
         </div>
     </div>
+    @if (session()->has('error'))
+        <div class="toast-container position-fixed bottom-0 end-0 p-3">
+            <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header">
+                    <strong class="me-auto">CodeCampus</strong>
+                    <small>Now</small>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div class="toast-body">
+                    <b>
+                        {{ session('error') }}
+                    </b>
+                </div>
+            </div>
+        </div>
+    @endif
 @endsection

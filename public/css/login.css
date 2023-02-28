@@ -30,6 +30,10 @@ body {
     font-weight: bold;
 }
 
+#login label {
+    font-size: 1vw;
+}
+
 #register .title-card {
     height: 5vw;
     display: flex;
