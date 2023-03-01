@@ -13,9 +13,6 @@
                     <a class="nav-link" href="/">Beranda</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Layanan</a>
-                </li>
-                <li class="nav-item">
                     <a class="btn btn-success nav-btn" href="{{ route('login') }}">
                         Login <i class="bi bi-arrow-right-circle-fill"></i>
                     </a>

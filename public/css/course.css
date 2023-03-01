@@ -1,0 +1,36 @@
+#course .card {
+    border-radius: 30px;
+}
+
+#course .btn {
+    font-weight: bold;
+    border-radius: 30px;
+}
+
+@media screen and (max-width:767px) {
+    #course .card-title {
+        font-size: 3vw;
+    }
+
+    #course .card-text {
+        font-size: 2vw;
+    }
+
+    #course .btn {
+        font-size: 3vw;
+    }
+}
+
+@media screen and (max-width:992px) {
+    #course .card-title {
+        font-size: 2vw;
+    }
+
+    #course .card-text {
+        font-size: 1.5vw;
+    }
+
+    #course .btn {
+        font-size: 2vw;
+    }
+}

@@ -124,4 +124,7 @@
             </div>
         </div>
     </section>
+    <section id='course'>
+        @livewire('course')
+    </section>
 @endsection
