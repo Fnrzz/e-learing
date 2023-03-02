@@ -34,7 +34,7 @@
                 </div>
                 <div class="col d-flex justify-content-end">
                     <img src="{{ asset('/storage/icons/rocket.png') }}" data-aos="fade-left" data-aos-duration="1000"
-                        class="img-fluid">
+                        class="img-fluid" alt="rocket">
                 </div>
             </div>
             @if (session()->has('success'))
@@ -60,7 +60,7 @@
             <div class="row row-cols-1 row-cols-md-2 align-items-center">
                 <div class="col d-flex justify-content-center">
                     <img src="{{ asset('/storage/icons/logo.png') }}" class="img-about" data-aos="fade-up"
-                        data-aos-duration="1000">
+                        data-aos-duration="1000" alt="logo">
                 </div>
                 <div class="col">
                     <p class="text-about fw-bold" data-aos="fade-up" data-aos-duration="1000">
@@ -83,7 +83,8 @@
                     <div class="card shadow" data-aos="fade-up" data-aos-duration="1000">
                         <div class="card-body">
                             <div class="row justify-content-center">
-                                <img src="{{ asset('/storage/icons/1.png') }}" class="img-feature rounded-circle">
+                                <img src="{{ asset('/storage/icons/1.png') }}" class="img-feature rounded-circle"
+                                    alt="icons1">
                                 <p class="text-secondary">
                                     Kami menawarkan kursus pemrograman web untuk pengguna yang ingin mempelajari bahasa
                                     pemrograman web seperti HTML, CSS, dan JavaScript. Kursus ini dapat disesuaikan
@@ -98,7 +99,8 @@
                     <div class="card shadow" data-aos="fade-up" data-aos-duration="1000">
                         <div class="card-body">
                             <div class="row justify-content-center">
-                                <img src="{{ asset('/storage/icons/2.png') }}" class="img-feature rounded-circle">
+                                <img src="{{ asset('/storage/icons/2.png') }}" class="img-feature rounded-circle"
+                                    alt="icons2">
                                 <p class="text-secondary">
                                     Kami menawarkan proyek dan challenge untuk menguji kemampuan pengguna dalam
                                     membuat aplikasi web dari awal. Proyek dan challenge ini dapat berupa membuat website,
@@ -112,7 +114,8 @@
                     <div class="card shadow" data-aos="fade-up" data-aos-duration="1000">
                         <div class="card-body">
                             <div class="row justify-content-center">
-                                <img src="{{ asset('/storage/icons/3.png') }}" class="img-feature rounded-circle">
+                                <img src="{{ asset('/storage/icons/3.png') }}" class="img-feature rounded-circle"
+                                    alt="icons3">
                                 <p class="text-secondary">
                                     Forum diskusi dan komunitas untuk membantu pengguna dalam memecahkan masalah dan
                                     bertukar informasi tentang web developing.

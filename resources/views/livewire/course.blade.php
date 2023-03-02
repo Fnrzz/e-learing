@@ -12,7 +12,7 @@
                         <div class="card-body">
                             <div class="row align-items-center">
                                 <div class="col-lg-2 col-4 d-flex justify-content-cennter">
-                                    <img src="{{ asset('/storage/icons/1.png') }}" class="img-fluid" alt="">
+                                    <img src="{{ asset('/storage/icons/1.png') }}" class="img-fluid" alt="icon1">
                                 </div>
                                 <div class="col-lg-10 col-8">
                                     <h5 class="card-title ">{{ $course->name }}</h5>
@@ -20,7 +20,11 @@
                                 </div>
                             </div>
                             <div class="d-grid mt-3">
-                                <a href="" class="btn btn-success">Lihat</a>
+                                @if (auth()->check())
+                                    <a href="/course/{{ $course->id }}" class="btn btn-success">Lihat</a>
+                                @else
+                                    <a href="{{ route('login') }}" class="btn btn-success">Lihat</a>
+                                @endif
                             </div>
                         </div>
                     </div>
