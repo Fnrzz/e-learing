@@ -16,7 +16,7 @@
                                 </div>
                                 <div class="col-lg-10 col-8">
                                     <h5 class="card-title ">{{ $course->title }}</h5>
-                                    <p class="card-text ">{{ $course->description }}</p>
+                                    <p class="card-text ">{{ $course->excerpt }}</p>
                                 </div>
                             </div>
                             <div class="d-grid mt-3">
