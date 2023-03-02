@@ -15,13 +15,13 @@
                                     <img src="{{ asset('/storage/icons/1.png') }}" class="img-fluid" alt="icon1">
                                 </div>
                                 <div class="col-lg-10 col-8">
-                                    <h5 class="card-title ">{{ $course->name }}</h5>
+                                    <h5 class="card-title ">{{ $course->title }}</h5>
                                     <p class="card-text ">{{ $course->description }}</p>
                                 </div>
                             </div>
                             <div class="d-grid mt-3">
                                 @if (auth()->check())
-                                    <a href="/course/{{ $course->id }}" class="btn btn-success">Lihat</a>
+                                    <a href="/course/{{ $course->slug }}" class="btn btn-success">Lihat</a>
                                 @else
                                     <a href="{{ route('login') }}" class="btn btn-success">Lihat</a>
                                 @endif
