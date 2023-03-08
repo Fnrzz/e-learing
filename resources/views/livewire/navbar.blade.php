@@ -19,7 +19,7 @@
                             {{ auth()->user()->username }}
                         </a>
                         <ul class="dropdown-menu dropdown-menu-start dropdown-menu-md-end">
-                            <li><a class="dropdown-item" href="#">Dashboard</a></li>
+                            <li><a class="dropdown-item" href="{{ route('dashboard') }}">Dashboard</a></li>
                             <li>
                                 <a class="dropdown-item fw-bold" href="{{ route('logout') }}">
                                     Logout <i class="bi bi-box-arrow-right"></i>

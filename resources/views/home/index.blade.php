@@ -27,9 +27,15 @@
                         </div>
                     </div>
                     <div class="row ">
-                        <div class="col text-center">
-                            <a href="{{ route('login') }}" class="btn btn-success btn-join fw-bold">Join Now</a>
-                        </div>
+                        @if (auth()->check())
+                            <div class="col text-center">
+                                <a href="{{ route('dashboard') }}" class="btn btn-success btn-join fw-bold">Play Now</a>
+                            </div>
+                        @else
+                            <div class="col text-center">
+                                <a href="{{ route('login') }}" class="btn btn-success btn-join fw-bold">Join Now</a>
+                            </div>
+                        @endif
                     </div>
                 </div>
                 <div class="col d-flex justify-content-end">
