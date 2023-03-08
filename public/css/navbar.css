@@ -21,11 +21,15 @@
 /* Tablet */
 @media screen and (max-width:992px) {
     .nav-btn {
-        font-size: 1.3vw;
+        font-size: 1.8vw;
     }
 
     .nav-link {
-        font-size: 1.3vw;
+        font-size: 1.8vw;
+    }
+
+    .dropdown-menu>li>a {
+        font-size: 1.8vw;
     }
 }
 
@@ -37,6 +41,14 @@
 
     .navbar-nav {
         padding-left: 2rem;
+    }
+
+    .dropdown-menu {
+        width: 90%;
+    }
+
+    .dropdown-menu>li>a {
+        font-size: 3vw;
     }
 
     .nav-link {

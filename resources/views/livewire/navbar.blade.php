@@ -12,11 +12,28 @@
                 <li class="nav-item">
                     <a class="nav-link" href="/">Beranda</a>
                 </li>
-                <li class="nav-item">
-                    <a class="btn btn-success nav-btn" href="{{ route('login') }}">
-                        Login <i class="bi bi-arrow-right-circle-fill"></i>
-                    </a>
-                </li>
+                @if (auth()->check())
+                    <li class="nav-item dropdown-center">
+                        <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            {{ auth()->user()->username }}
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-start dropdown-menu-md-end">
+                            <li><a class="dropdown-item" href="#">Dashboard</a></li>
+                            <li>
+                                <a class="dropdown-item fw-bold" href="{{ route('logout') }}">
+                                    Logout <i class="bi bi-box-arrow-right"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                @else
+                    <li class="nav-item">
+                        <a class="btn btn-success nav-btn" href="{{ route('login') }}">
+                            Login <i class="bi bi-arrow-right-circle-fill"></i>
+                        </a>
+                    </li>
+                @endif
             </ul>
         </div>
     </div>
