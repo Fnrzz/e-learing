@@ -17,6 +17,7 @@ class UserSeeder extends Seeder
             'name' => 'Farid Nur Raidananda',
             'email' => 'faridnurraidananda6@gmail.com',
             'username' => 'fnrzz',
+            'role' => 'admin',
             'password' => bcrypt('Farid123')
         ]);
     }
