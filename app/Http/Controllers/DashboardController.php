@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class DashboardController extends Controller
@@ -11,5 +12,10 @@ class DashboardController extends Controller
         if (auth()->user()->role == 'admin') {
             return view('admin.index');
         }
+    }
+
+    public function videos()
+    {
+        return view('admin.videos');
     }
 }

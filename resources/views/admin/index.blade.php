@@ -14,7 +14,7 @@
                 </a>
             </div>
             <div class="col d-flex justify-content-center">
-                <a href="" class="text-decoration-none text-dark" style="width: 80%;">
+                <a href="{{ route('videos') }}" class="text-decoration-none text-dark" style="width: 80%;">
                     <div class="card shadow rounded-4">
                         <div class="card-body text-center">
                             <h5 class="card-title"><i class="bi bi-youtube fs-2"></i></h5>
