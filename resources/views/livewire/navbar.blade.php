@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg bg-white sticky-top">
     <div class="container">
-        <a class="navbar-brand" href="">
+        <a class="navbar-brand" href="{{ route('home') }}">
             <img src="{{ asset('/storage/icons/icon.png') }}" width="130" height="65" alt="icon">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -10,7 +10,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="/">Beranda</a>
+                    <a class="nav-link" href="{{ route('home') }}">Beranda</a>
                 </li>
                 @if (auth()->check())
                     <li class="nav-item dropdown-center">
