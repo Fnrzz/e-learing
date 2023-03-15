@@ -16,6 +16,8 @@ class DashboardController extends Controller
 
     public function videos()
     {
-        return view('admin.videos');
+        if (auth()->user()->role == 'admin') {
+            return view('admin.videos');
+        }
     }
 }

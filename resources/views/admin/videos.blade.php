@@ -12,7 +12,7 @@
         </div>
         <div class="row pb-5">
             <div class="col">
-                <a href="" class="btn btn-success rounded-4 fw-bold">Add Course</a>
+                <a href="{{ route('createCourse') }}" class="btn btn-success rounded-4 fw-bold">Add Course</a>
             </div>
         </div>
     </div>
