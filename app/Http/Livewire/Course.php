@@ -17,7 +17,7 @@ class Course extends Component
     public function render()
     {
         $data = [
-            'courses' => $this->readyToLoad ? ModelsCourse::simplePaginate(4) : [],
+            'courses' => $this->readyToLoad ? ModelsCourse::latest()->paginate(4) : [],
         ];
         return view('livewire.course', $data);
     }

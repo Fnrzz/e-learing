@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CourseController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LoginController;
@@ -30,5 +31,9 @@ Route::middleware('auth')->group(function () {
     Route::get('/course/{course:slug}', [HomeController::class, 'detail']);
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
     Route::get('/dashboard/videos', [DashboardController::class, 'videos'])->name('videos');
-    Route::get('/dashboard/create-course', [DashboardController::class, 'createCourse'])->name('createCourse');
+});
+
+Route::middleware('auth', 'admin')->group(function () {
+    Route::post('/create-course', [CourseController::class, 'store'])->name('createCourse');
+    Route::get('/create-course/checkslug', [CourseController::class, 'checkSlug']);
 });
