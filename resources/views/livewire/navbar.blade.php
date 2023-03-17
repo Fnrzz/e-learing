@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg bg-white sticky-top">
     <div class="container">
         <a class="navbar-brand" href="{{ route('home') }}">
-            <img src="{{ asset('/storage/icons/icon.png') }}" width="130" height="65" alt="icon">
+            <img src="{{ asset('/storage/icons/icon.webp') }}" width="130" height="65" alt="icon">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">

@@ -39,7 +39,7 @@
                     </div>
                 </div>
                 <div class="col d-flex justify-content-end">
-                    <img src="{{ asset('/storage/icons/rocket.png') }}" data-aos="fade-left" data-aos-duration="1000"
+                    <img src="{{ asset('/storage/icons/rocket.webp') }}" data-aos="fade-left" data-aos-duration="1000"
                         class="img-fluid" alt="rocket">
                 </div>
             </div>
@@ -65,7 +65,7 @@
         <div class="container p-5">
             <div class="row row-cols-1 row-cols-md-2 align-items-center">
                 <div class="col d-flex justify-content-center">
-                    <img src="{{ asset('/storage/icons/logo.png') }}" class="img-about" data-aos="fade-up"
+                    <img src="{{ asset('/storage/icons/logo.webp') }}" class="img-about" data-aos="fade-up"
                         data-aos-duration="1000" alt="logo">
                 </div>
                 <div class="col">
@@ -89,7 +89,7 @@
                     <div class="card shadow" data-aos="fade-up" data-aos-duration="1000">
                         <div class="card-body">
                             <div class="row justify-content-center">
-                                <img src="{{ asset('/storage/icons/1.png') }}" class="img-feature rounded-circle"
+                                <img src="{{ asset('/storage/icons/1.webp') }}" class="img-feature rounded-circle"
                                     alt="icons1">
                                 <p class="text-secondary">
                                     Kami menawarkan kursus pemrograman web untuk pengguna yang ingin mempelajari bahasa
@@ -105,7 +105,7 @@
                     <div class="card shadow" data-aos="fade-up" data-aos-duration="1000">
                         <div class="card-body">
                             <div class="row justify-content-center">
-                                <img src="{{ asset('/storage/icons/2.png') }}" class="img-feature rounded-circle"
+                                <img src="{{ asset('/storage/icons/2.webp') }}" class="img-feature rounded-circle"
                                     alt="icons2">
                                 <p class="text-secondary">
                                     Kami menawarkan proyek dan challenge untuk menguji kemampuan pengguna dalam
@@ -120,7 +120,7 @@
                     <div class="card shadow" data-aos="fade-up" data-aos-duration="1000">
                         <div class="card-body">
                             <div class="row justify-content-center">
-                                <img src="{{ asset('/storage/icons/3.png') }}" class="img-feature rounded-circle"
+                                <img src="{{ asset('/storage/icons/3.webp') }}" class="img-feature rounded-circle"
                                     alt="icons3">
                                 <p class="text-secondary">
                                     Forum diskusi dan komunitas untuk membantu pengguna dalam memecahkan masalah dan

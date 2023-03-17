@@ -6,7 +6,7 @@
                     <div class="card-body">
                         <div class="row align-items-center">
                             <div class="col-lg-2 col-4 d-flex justify-content-cennter">
-                                <img src="{{ asset('/storage/icons/1.png') }}" class="img-fluid" alt="icon1">
+                                <img src="{{ asset('/storage/icons/1.webp') }}" class="img-fluid" alt="icon1">
                             </div>
                             <div class="col-lg-10 col-8">
                                 <h5 class="card-title ">{{ $course->title }}</h5>
