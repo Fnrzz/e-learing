@@ -23,7 +23,7 @@
                         </div>
                     </form>
                     <div class="mb-3 d-flex justify-content-center">
-                        <img src="{{ asset('/storage/icons/icon.png') }}">
+                        <img src="{{ asset('/storage/icons/icon.webp') }}">
                     </div>
                     <div class="mb-3 d-flex justify-content-center">
                         <a href="{{ route('register') }}" class="text-center text-decoration-none">
