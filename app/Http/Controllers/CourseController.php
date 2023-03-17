@@ -17,7 +17,7 @@ class CourseController extends Controller
             'description' => 'required',
             'link' => 'required'
         ]);
-        $rules['excerpt'] = Str::limit(strip_tags($request->body), 50, '...');
+        $rules['excerpt'] = Str::limit(strip_tags($request->description), 40, '...');
         Course::create($rules);
         return redirect('/dashboard/videos')->with('success', 'Berhasil menambahkan course');
     }
