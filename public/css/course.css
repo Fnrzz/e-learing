@@ -1,5 +1,18 @@
 #course .card {
     border-radius: 30px;
+
+}
+
+#course .card-body {
+    height: 200px;
+}
+
+#course .card .row {
+    height: 60%;
+}
+
+#course .card .d-grid {
+    height: 20%;
 }
 
 #course .btn {
@@ -8,6 +21,18 @@
 }
 
 @media screen and (max-width:767px) {
+    #course .card-body {
+        height: auto;
+    }
+
+    #course .card .row {
+        height: auto;
+    }
+
+    #course .card .d-grid {
+        height: auto;
+    }
+
     #course .card-title {
         font-size: 3vw;
     }
@@ -22,6 +47,8 @@
 }
 
 @media screen and (max-width:992px) {
+
+
     #course .card-title {
         font-size: 2vw;
     }
