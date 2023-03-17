@@ -27,4 +27,10 @@ class CourseController extends Controller
         $slug = SlugService::createSlug(Course::class, 'slug', $request->title);
         return response()->json(['slug' => $slug]);
     }
+
+    public function delete(Course $course)
+    {
+        $course->delete();
+        return back()->with('success', 'Berhasil menghapus course');
+    }
 }

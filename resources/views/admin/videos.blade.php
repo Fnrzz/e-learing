@@ -12,6 +12,9 @@
         </div>
         <div class="row pb-5">
             <div class="col">
+                <a href="{{ route('dashboard') }}" class="btn btn-info rounded-4 text-white fw-bold">
+                    Back
+                </a>
                 <button class="btn btn-success rounded-4 fw-bold" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                     Add Course
                 </button>
@@ -105,6 +108,5 @@
                 </div>
             </div>
         @endif
-
     </div>
 @endsection

@@ -25,8 +25,13 @@
                         <td>{{ $video->title }}</td>
                         <td>{{ $video->link }}</td>
                         <td>
-                            <a href="/dashboard/videos/{{ $video->slug }}">
+                            <a href="/dashboard/video/{{ $video->slug }}" class="text-decoration-none">
                                 <span class="badge text-bg-info text-white">
+                                    <i class="bi bi-person-vcard-fill"></i>
+                                </span>
+                            </a>
+                            <a href="/dashboard/delete-video/{{ $video->slug }}" class="text-decoration-none">
+                                <span class="badge text-bg-danger text-white">
                                     <i class="bi bi-person-vcard-fill"></i>
                                 </span>
                             </a>
