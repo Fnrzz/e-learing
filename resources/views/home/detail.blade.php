@@ -20,4 +20,14 @@
             </div>
         </div>
     </section>
+    <section id="course">
+        <div class="container p-5">
+            <div class="row mb-5">
+                <div class="col">
+                    <h3>Video Lainya</h3>
+                </div>
+            </div>
+            @livewire('course')
+        </div>
+    </section>
 @endsection

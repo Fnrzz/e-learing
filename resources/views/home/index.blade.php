@@ -134,6 +134,13 @@
         </div>
     </section>
     <section id='course'>
-        @livewire('course')
+        <div class="container p-5">
+            <div class="row mb-5">
+                <div class="col">
+                    <h3 class="text-center">Video Pembelajaran</h3>
+                </div>
+            </div>
+            @livewire('course')
+        </div>
     </section>
 @endsection
