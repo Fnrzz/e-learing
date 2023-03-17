@@ -31,6 +31,7 @@ Route::middleware('auth')->group(function () {
     Route::get('/course/{course:slug}', [HomeController::class, 'detail']);
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
     Route::get('/dashboard/videos', [DashboardController::class, 'videos'])->name('videos');
+    Route::get('/dashboard/video/{course:slug}', [DashboardController::class, 'detail']);
 });
 
 Route::middleware('auth', 'admin')->group(function () {

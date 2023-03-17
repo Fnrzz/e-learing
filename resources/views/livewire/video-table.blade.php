@@ -32,7 +32,7 @@
                             </a>
                             <a href="/dashboard/delete-video/{{ $video->slug }}" class="text-decoration-none">
                                 <span class="badge text-bg-danger text-white">
-                                    <i class="bi bi-person-vcard-fill"></i>
+                                    <i class="bi bi-trash-fill"></i>
                                 </span>
                             </a>
                         </td>

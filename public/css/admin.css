@@ -7,3 +7,17 @@ a:hover>.card {
     background-color: green;
     color: white;
 }
+
+@media screen and (max-width:767px) {
+    #detail iframe {
+        height: auto;
+    }
+
+    #detail h5 {
+        font-size: 4vw;
+    }
+
+    #detail p {
+        font-size: 3vw;
+    }
+}
