@@ -15,7 +15,7 @@
                         </div>
                         <div class="d-grid mt-3">
                             @if (auth()->check())
-                                <a href="/course/{{ $course->slug }}" class="btn btn-success">Lihat</a>
+                                <a href="/dashboard/course/{{ $course->slug }}" class="btn btn-success">Lihat</a>
                             @else
                                 <a href="{{ route('login') }}" class="btn btn-success">Lihat</a>
                             @endif

@@ -11,6 +11,8 @@ class DashboardController extends Controller
     {
         if (auth()->user()->role == 'admin') {
             return view('admin.index');
+        } else {
+            return view('user.index');
         }
     }
 
@@ -28,6 +30,11 @@ class DashboardController extends Controller
                 'course' => $course
             ];
             return view('admin.detail', $data);
+        } else {
+            $data = [
+                'course' => $course,
+            ];
+            return view('user.detail', $data);
         }
     }
 }

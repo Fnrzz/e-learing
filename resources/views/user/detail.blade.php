@@ -1,10 +1,10 @@
-@extends('home.layouts.layout')
+@extends('user.layouts.layout')
 
 @section('content')
     <section id="detail">
         <div class="container px-5">
             <div class="row mb-3">
-                <a href="{{ route('home') }}">
+                <a href="{{ route('dashboard') }}">
                     <span class="badge text-bg-success"><i class="bi bi-arrow-left-circle-fill me-1"></i>Back</span>
                 </a>
             </div>

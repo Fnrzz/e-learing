@@ -11,13 +11,4 @@ class HomeController extends Controller
     {
         return view('home.index');
     }
-
-    public function detail(Course $course)
-    {
-        $data  = [
-            'course' => $course
-        ];
-
-        return view('home.detail', $data);
-    }
 }

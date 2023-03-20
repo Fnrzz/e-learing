@@ -28,8 +28,8 @@ Route::middleware('guest')->group(function () {
 
 Route::middleware('auth')->group(function () {
     Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
-    Route::get('/course/{course:slug}', [HomeController::class, 'detail']);
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+    Route::get('/dashboard/course/{course:slug}', [DashboardController::class, 'detail']);
     Route::get('/dashboard/videos', [DashboardController::class, 'videos'])->name('videos');
     Route::get('/dashboard/video/{course:slug}', [DashboardController::class, 'detail']);
 });
