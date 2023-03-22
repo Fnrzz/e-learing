@@ -32,7 +32,8 @@ class CourseSeeder extends Seeder
             10:18 Software Requirements
             </p>
             ',
-            'link' => 'https://www.youtube.com/embed/HqAMb6kqlLs'
+            'link' => 'https://www.youtube.com/embed/HqAMb6kqlLs',
+            'thumbnail' => 'HqAMb6kqlLs'
         ]);
 
         Course::create([
@@ -45,7 +46,8 @@ class CourseSeeder extends Seeder
             18:11 Instalasi & Konfigurasi di Windows<br>
             39:56 Penutup
             </p>',
-            'link' => 'https://www.youtube.com/embed/pZqk57Xvujs'
+            'link' => 'https://www.youtube.com/embed/pZqk57Xvujs',
+            'thumbnail' => 'pZqk57Xvujs'
         ]);
 
         Course::create([
@@ -59,7 +61,8 @@ class CourseSeeder extends Seeder
             20:00 Mengirimkan data ke view<br>
             23:00 Penutup<br></p>',
             'excerpt' => 'Video penjelasan struktur folder pada laravel 8',
-            'link' => 'https://www.youtube.com/embed/u7zS2XpMpsc'
+            'link' => 'https://www.youtube.com/embed/u7zS2XpMpsc',
+            'thumbnail' => 'u7zS2XpMpsc'
         ]);
 
         Course::create([
@@ -74,7 +77,8 @@ class CourseSeeder extends Seeder
             31:28 Single Post<br>
             33:59 Penutup<br></p>',
             'excerpt' => 'Video penjelasan tentang templateing pada laravel 8',
-            'link' => 'https://www.youtube.com/embed/9jrD0wcfq1g'
+            'link' => 'https://www.youtube.com/embed/9jrD0wcfq1g',
+            'thumbnail' => '9jrD0wcfq1g'
         ]);
     }
 }

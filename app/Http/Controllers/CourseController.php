@@ -12,12 +12,20 @@ class CourseController extends Controller
 {
     public function store(Request $request): RedirectResponse
     {
+
         $rules = $request->validate([
             'title' => 'required',
             'description' => 'required',
             'link' => 'required'
         ]);
+
         $rules['excerpt'] = Str::limit(strip_tags($request->description), 40, '...');
+
+        $link = $request->link;
+        $token = explode("/", $link)[4];
+
+        $rules['thumbnail'] = $token;
+
         Course::create($rules);
         return redirect('/dashboard/videos')->with('success', 'Berhasil menambahkan course');
     }

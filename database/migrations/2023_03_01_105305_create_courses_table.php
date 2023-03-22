@@ -18,6 +18,7 @@ return new class extends Migration
             $table->text('excerpt');
             $table->text('description');
             $table->string('link');
+            $table->string('thumbnail');
             $table->timestamps();
         });
     }
