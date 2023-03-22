@@ -16,7 +16,8 @@ class CourseController extends Controller
         $rules = $request->validate([
             'title' => 'required',
             'description' => 'required',
-            'link' => 'required'
+            'link' => 'required',
+            'slug' => 'required'
         ]);
 
         $rules['excerpt'] = Str::limit(strip_tags($request->description), 40, '...');
@@ -40,5 +41,25 @@ class CourseController extends Controller
     {
         $course->delete();
         return back()->with('success', 'Berhasil menghapus course');
+    }
+
+    public function update(Request $request, Course $course)
+    {
+        $rules = $request->validate([
+            'title' => 'required',
+            'description' => 'required',
+            'link' => 'required',
+            'slug' => 'required'
+        ]);
+
+        $rules['excerpt'] = Str::limit(strip_tags($request->description), 40, '...');
+
+        $link = $request->link;
+        $token = explode("/", $link)[4];
+
+        $rules['thumbnail'] = $token;
+
+        $course->update($rules);
+        return redirect('/dashboard/videos')->with('success', 'Berhasil mengubah course');
     }
 }

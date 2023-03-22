@@ -36,6 +36,7 @@ Route::middleware('auth')->group(function () {
 
 Route::middleware('auth', 'admin')->group(function () {
     Route::post('/create-course', [CourseController::class, 'store'])->name('createCourse');
+    Route::post('/update-course/{course:slug}', [CourseController::class, 'update'])->name('updateCourse');
     Route::get('/dashboard/delete-video/{course:slug}', [CourseController::class, 'delete']);
     Route::get('/create-course/checkslug', [CourseController::class, 'checkSlug']);
 });
