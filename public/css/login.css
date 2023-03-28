@@ -58,6 +58,10 @@ body {
         width: 20vw;
     }
 
+    #login label {
+        font-size: 3vw;
+    }
+
     #register label {
         font-size: 3vw;
     }
